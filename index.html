@@ -31,7 +31,156 @@
         </nav>
         <span>8-902-104-71-78</span>
         <button type="button">Войти</button>
+        <img src="images/image 55.png" alt="Войти" width="16" height="16">
+        
     </header>
+
+    <main>
+
+        <section>
+            <div>
+                <h2>Вкусная Пицца</h2>
+                <p>Готовим с любовью по особму рецепту. Закажи вкусную пиццу у нас.</p>
+                </div>
+                <button type="button">Заказать сочную пиццу</button>
+                <button type="button">Войти</button>
+            </div>
+        </div>
+        <img src="images/image 10.png" alt="Изображение пиццы" width="350" height="350">
+    </section>
+     
+    <section>
+        <h2>Умная сортировка по тегам</h2>
+        <p>Выбери пиццу и указывай наиболее популярные теги. Это позволит быстро находить любые категории, на Ваш выбор.</p>
+        <ul>
+            <li>
+                <img src="images/image 30.png" alt="Иконка для классических пицц" width="22" height="24">
+                <h3>Класссические пиццы</h3>
+                <p>Время приготвления таких пицц не более 20 минут.</p>
+            </li>
+            <li>
+                <img src="images/icon/cook.svg" alt="Иконка для детского меню" width="24" height="24">
+                <h3>Детское</h3>
+                <p>Самые полезные блюда которые можно детям любого возраста</p>
+            </li>
+            <li>
+                <img src="images/icon/chef.svg" alt="Иконка для блюд от шеф-поваров" width="24" height="23">
+                <h3>От шеф-поваров</h3>
+                <p>Требуют умения, времени и терпения, зато как в ресторане</p>
+            </li>
+            <li>
+                <img src="images/icon/fire.svg" alt="Иконка для блюд на праздник" width="24" height="23">
+                <h3>На праздник</h3>
+                <p>Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <div>
+            <a href="#" target="_blank">@glazest</a>
+            <img src="images/section2.png" alt="Изображение тыквенного супчика" width="543" height="543">
+        </div>
+        <div>
+            <div>
+                <span>
+                    <img src="images/icon/heart.svg" alt="Избранное" width="24" height="24">
+                    356
+                </span>
+                <span>
+                    <img src="images/icon/timer.svg" alt="Время приготовления" width="24" height="24">
+                    35 минут
+                </span>
+            </div>
+            <div>
+                Рецепт дня
+                <img src="img/recipe-day.png" alt="Рецепт дня" width="50" height="50">
+            </div>
+            <h2>Тыквенный супчик на кокосовом молоке</h2>
+            <p>Если у вас осталась тыква, и вы не знаете что с ней сделать, то это решение для вас! Ароматный,
+                согревающий суп-пюре на кокосовом молоке. Можно даже в Пост!</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Поиск рецептов</h2>
+        <p>Введите примерное название блюда, а мы по тегам найдем его</p>
+        <form action="/" method="get">
+            <input type="search" name="text" placeholder="Название блюда....">
+            <input type="submit" value="Поиск">
+        </form>
+        <ul>
+            <li>Мясо</li>
+            <li>Деликатесы</li>
+            <li>Пироги</li>
+            <li>Рыба</li>
+        </ul>
+    </section>
+</main>
+<!--/ Основной контент -->
+<!-- Подвал -->
+<footer>
+    <a>Recipes</a>
+    <p>&copy; Recipes 2021</p>
+</footer>
+<!--/ Подвал -->
+<!-- Формы -->
+<div>
+    <!-- Форма "Войдите в профиль" -->
+    <section>
+        <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+        <h2>Войдите в профиль</h2>
+        <p>Добавлять рецепты могут только зарегистрированные пользователи.</p>
+        <div>
+            <button type="button">Войти</button>
+            <button type="button">Регистрация</button>
+        </div>
+    </section>
+    <!--/ Форма "Войдите в профиль" -->
+    <!-- Форма "Регистрация" -->
+    <section>
+        <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+        <h2>Регистрация</h2>
+        <form action="/" method="post">
+            <input type="text" name="name" placeholder="Имя" required>
+            <input type="email" name="email" placeholder="Логин" required>
+            <fieldset>
+                <div>
+                    <input type="password" name="password" placeholder="Пароль" required>
+                    <span>Минимум 8 символов</span>
+                </div>
+                <input type="password" name="repeat-password" placeholder="Повторите пароль" required>
+            </fieldset>
+            <fieldset>
+                <input type="submit" value="Зарегистрироваться">
+                <button type="button">Отмена</button>
+            </fieldset>
+            <button type="button">У меня уже есть аккаунт</button>
+        </form>
+    </section>
+    <!--/ Форма "Регистрация" -->
+    <!-- Форма "Войти" -->
+    <section>
+        <button type="button"><img src="images/icon/close.svg" alt="Закрыть окно" width="24" height="24"></button>
+        <h2>Войти</h2>
+        <form action="/" method="post">
+            <input type="email" name="email" placeholder="Логин" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <fieldset>
+                <input type="submit" value="Войти">
+                <button type="button">Отмена</button>
+            </fieldset>
+            <button type="button">У меня еще нет аккаунта</button>
+        </form>
+    </section>
+    <!--/ Форма "Войти" -->
+</div>
+<!--/ Формы -->
+</body>
+
+</html>
+
+        
 
       
     
