@@ -4,3 +4,4 @@
 - Факультет: Историко-Филологический
 ---
  Проект: Сайт для покупки пиццы и иных вкусностей для вашего дома
+ Ссылка на макет фигмы: https://www.figma.com/design/s6P7lJXDaMtK7P8xqnm2aC/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD---%D0%94%D0%BE%D1%81%D1%82%D0%B0%D0%B2%D0%BA%D0%B0-%D0%BF%D0%B8%D1%86%D1%86%D1%8B?node-id=1-4553&node-type=frame&t=vFQ8luezJGLk4qw4-0
