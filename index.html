@@ -9,16 +9,16 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <div class="header__inner"> 
             <a class="header__logo logo" href="#"> 
             <img src="images/image5.png" alt="Логотип" width="60" height="60">Пицца</a>
-            <span class="header__text">8-999-777-77-77</span>
-            <button type="button" class="header__button button--accent">Войти</button>
-            <img src="images/image55.png" alt="Войти" width="16" height="16">
-            <button type="button" class="header__button button">Заказать</button>  
-        </div>
 
+            <span class="header__text">8-999-777-77-77</span>
+            <img src="images/image55.png" alt="Войти" width="16" height="16">
+            <button type="button" class="header__button button">Заказать звонок</button>  
+        </div>
+        
         <nav class="header__nav">
             <ul class="header__list">
                 <li class="header__item"><a class="header__item-link header__item-link--active" href="#">Главная</a></li>
@@ -31,12 +31,12 @@
                 <li class="header__item"><a class="header__item-link" href="#">Акции</a></li>
                 <li class="header__item"><a class="header__item-link" href="#">Комбо</a></li>
                 <li class="header__item"><a class="header__item-link" href="#">Контакты</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Войти</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Корзина</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Избранное</a></li>                  
+                
             </ul>
         </nav>
         
+        <button type="button" class="header__button button button--login">Войти</button>
+        <button type="button" class="header__button button button--basket">Корзина</button>
 
     </header>
 
@@ -50,7 +50,7 @@
             <img class="promo__image" src="images/image36.png" alt="Изображение рекламного фото сайта 2" width="800" height="600">
             <div class="promo__buttons">
                 <button class="promo__button button" type="button">Заказать сочную пиццу</button>
-                <button class="promo__button button--accent" type="button">Войти</button>
+                <button class="promo__button button button--login" type="button">Войти</button>
                <!-- <img src="images/image10.png" alt="Изображение пиццы" width="350" height="350">--> 
                 </div>
         </section>
@@ -114,7 +114,6 @@
              найдем его</p>
         <form class="search__form form" action="/" method="get">
             <input class="search__form-name form__field" type="search" name="text" placeholder="Название пиццы....">
-            <button class="search__form-submit button" type="submit" value="Поиск"></button>
         </form>
         <ul class="search__tag-list">
             <li class="search__tag-item">Пиццы</li>
@@ -132,7 +131,7 @@
 <footer class="footer container">
     <a class="footer__logo logo">Pizza</a>
     <p class="footer__copy">&copy; Pizza 2024</p>
-</footer>
+</footer container>
 <!--/ Подвал -->
 <!-- Формы -->
 <div class="dialog dialog--layout">
@@ -142,7 +141,7 @@
         <h2 class="popup__title">Войдите в профиль</h2>
         <p class="popup__desc">Выбирать или заказывать пиццу могут только зарегистрированные пользователи.</p>
         <div class="popup__buttons">
-            <button class="button button--accent" type="button">Войти</button>
+            <button class="button button--login" type="button">Войти</button>
             <button class="button" type="button">Регистрация</button>
         </div>
     </section>
@@ -177,7 +176,7 @@
             <input class="form__field" type="email" name="email" placeholder="Логин" required>
             <input class="form__field" type="password" name="password" placeholder="Пароль" required>
             <fieldset class="form__buttons">
-                <button class="button button--accent" type="submit">Войти</button>
+                <button class="button button--login" type="submit">Войти</button>
                 <button class="button" type="button">Отмена</button>
             </fieldset>
             <button class="button button--link" type="button">У меня еще нет аккаунта</button>
