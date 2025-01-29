@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,181 +11,210 @@
 
 <body>
     <header class="header container">
-        <div class="header__inner"> 
-            <a class="header__logo logo" href="#"> 
-            <img src="images/image5.png" alt="Логотип" width="60" height="60">Пицца</a>
+        <div class="header__inner">
+            <a class="header__logo logo" href="#">
+                <img src="images/image5.png" alt="Логотип" width="60" height="60">Пицца</a>
 
-            <span class="header__text">8-999-777-77-77</span>
-            <img src="images/image55.png" alt="Войти" width="16" height="16">
-            <button type="button" class="header__button button">Заказать звонок</button>  
+            <div>
+                <button type="button" class="header__button button">Заказать звонок</button>
+                <span class="header__text">8-999-777-77-77</span>
+            </div>
+
         </div>
-        
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item"><a class="header__item-link header__item-link--active" href="#">Главная</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Пиццы</a></li> 
-                <li class="header__item"><a class="header__item-link" href="#">Супы</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Салаты</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Напитки</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Десерты</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Бакалея</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Акции</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Комбо</a></li>
-                <li class="header__item"><a class="header__item-link" href="#">Контакты</a></li>
-                
-            </ul>
-        </nav>
-        
-        <button type="button" class="header__button button button--login">Войти</button>
-        <button type="button" class="header__button button button--basket">Корзина</button>
+        <div class="header__wrapper">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__item-link header__item-link--active" href="#">Главная</a>
+                    </li>
+                    <li class="header__item"><a class="header__item-link" href="#">Пиццы</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Супы</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Салаты</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Напитки</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Десерты</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Бакалея</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Акции</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Комбо</a></li>
+                    <li class="header__item"><a class="header__item-link" href="#">Контакты</a></li>
+
+                </ul>
+            </nav>
+        <div>
+                        <button type="button" class="header__button button button--login">
+                <img src="images/image55.png" alt="Войти" width="16" height="16">Войти</button>
+            <button type="button" class="header__button button button--basket">Корзина</button>
+        </div>
+
+
+        </div>
+
+
 
     </header>
 
     <main class="container">
         <section class="section promo">
-            <div class="promo__content"> 
+            <div class="promo__content">
                 <h2 class="promo__title section__title">Вкусная Пицца</h2>
                 <p class="promo__description">Готовим с любовью по особому рецепту. Закажи вкусную пиццу у нас.</p>
             </div>
-            <img class="promo__image" src="images/image35.png" alt="Изображение рекламного фото сайта 1" width="600" height="300">
-            <img class="promo__image" src="images/image36.png" alt="Изображение рекламного фото сайта 2" width="800" height="600">
+            <img class="promo__image" src="images/image35.png" alt="Изображение рекламного фото сайта 1" width="600"
+                height="300">
+            <img class="promo__image" src="images/image36.png" alt="Изображение рекламного фото сайта 2" width="800"
+                height="600">
             <div class="promo__buttons">
                 <button class="promo__button button" type="button">Заказать сочную пиццу</button>
                 <button class="promo__button button button--login" type="button">Войти</button>
-               <!-- <img src="images/image10.png" alt="Изображение пиццы" width="350" height="350">--> 
-                </div>
+                <!-- <img src="images/image10.png" alt="Изображение пиццы" width="350" height="350">-->
+            </div>
         </section>
 
-    <section class="section card">
-        <h2 class="section__title">Умная сортировка по тегам</h2>
-        <p class="section__description">Выбери пиццу и указывай наиболее популярные теги. Это позволит быстро находить любые категории, на Ваш выбор.</p>
-        <ul class="card__list">
-            <li class="card__item">
-                <img class="card__icon" src="images/image30.png" alt="Иконка для классических пицц" width="24" height="24">
-                <h3 class="card__title">Классические пиццы</h3>
-                <p class="card__description">Время приготовления таких пицц не более 20 минут.</p>
-            </li>
-            <li class="card__item">
-                <img class="card__icon" src="images/image15.png" alt="Иконка для детской пиццы" width="24" height="24">
-                <h3 class="card__title">Детская пицца</h3>
-                <p class="card__description">Самые полезные и вкусные пиццы, которые можно детям любого возраста</p>
-            </li>
-            <li class="card__item">
-                <img class="card__icon" src="images/image16.png" alt="Иконка для пиццы от шеф-поваров" width="35" height="35">
-                <h3 class="card__title">От шеф-поваров</h3>
-                <p class="card__description">Требуют умения, времени и терпения, зато это особый рецепт пиццы от шеф-поваров , как в ресторане</p>
-            </li>
-            <li class="card__item">
-                <img class="card__icon" src="images/image17.png" alt="Иконка для пиццы на праздник" width="24" height="23">
-                <h3 class="card__title">На праздник</h3>
-                <p class="card__description">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
-            </li>
-        </ul>
-    </section>
-        
-    <section class="section menu">
-        <h2 class="menu__title">Меню</h2>
-        <ul class="menu__list">
-            <li class="menu__item">
-                <img class="menu__icon" src="images/image31.png" alt="Иконка для пиццы с креветками и трюфелями" width="65" height="65">
-                <h3 class="menu__title">Пицца с сыром </h3>
-                <p class="menu__description">Домашняя пицца фетучини, сливочный соус, трюфельное масло, черный перец, пармезан 350г</p>
-            </li>
-            <li class="menu__item">
-                <img class="menu__icon" src="images/image32.png" alt="Иконка для пиццы 4в1" width="65" height="65">
-                <h3 class="menu__title">Пицца 4в1</h3>
-                <p class="menu__description">Вкусная и изысканная пицца 4в1, одна из самых популярных и желанных, охотничья колбаса, пармезан 350г, нежный соус барбекю, помидоры, пеперони, зеленый перец</p>
-            </li>
-            <li class="menu__item">
-                <img class="menu__icon" src="images/image33.png" alt="Иконка для пиццы Инь-Янь" width="65" height="65">
-                <h3 class="menu__title">Пицца Инь-Ян</h3>
-                <p class="menu__description">Сыр моцарелла, копченная грудка, фирменный соус, ананасы, соус терияки</p>
-            </li>
-            <li class="menu__item">
-                <img class="menu__icon" src="images/image34.png" alt="Иконка для пиццы с ветчиной и грибами" width="65" height="65">
-                <h3 class="menu__title">Пицца с ветчиной и грибами</h3>
-                <p class="menu__description">Ветчина, моцарелла, кетчуп, сочные шампиньоны, ананасы, бекон</p>
-            </li>
-        </ul>
-    </section>
+        <section class="section card">
+            <h2 class="section__title">Умная сортировка по тегам</h2>
+            <p class="section__description">Выбери пиццу и указывай наиболее популярные теги. Это позволит быстро
+                находить любые категории, на Ваш выбор.</p>
+            <ul class="card__list">
+                <li class="card__item">
+                    <img class="card__icon" src="images/image30.png" alt="Иконка для классических пицц" width="24"
+                        height="24">
+                    <h3 class="card__title">Классические пиццы</h3>
+                    <p class="card__description">Время приготовления таких пицц не более 20 минут.</p>
+                </li>
+                <li class="card__item">
+                    <img class="card__icon" src="images/image15.png" alt="Иконка для детской пиццы" width="24"
+                        height="24">
+                    <h3 class="card__title">Детская пицца</h3>
+                    <p class="card__description">Самые полезные и вкусные пиццы, которые можно детям любого возраста</p>
+                </li>
+                <li class="card__item">
+                    <img class="card__icon" src="images/image16.png" alt="Иконка для пиццы от шеф-поваров" width="35"
+                        height="35">
+                    <h3 class="card__title">От шеф-поваров</h3>
+                    <p class="card__description">Требуют умения, времени и терпения, зато это особый рецепт пиццы от
+                        шеф-поваров , как в ресторане</p>
+                </li>
+                <li class="card__item">
+                    <img class="card__icon" src="images/image17.png" alt="Иконка для пиццы на праздник" width="24"
+                        height="23">
+                    <h3 class="card__title">На праздник</h3>
+                    <p class="card__description">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
+                </li>
+            </ul>
+        </section>
 
-    <section class="section search">
-        <h2 class="section__title section__title--center">Поиск вкусной пиццы</h2>
-        <p class="section__description section__description--center">Введите примерное название пиццы , а мы по тегам
-             найдем его</p>
-        <form class="search__form form" action="/" method="get">
-            <input class="search__form-name form__field" type="search" name="text" placeholder="Название пиццы....">
-        </form>
-        <ul class="search__tag-list">
-            <li class="search__tag-item">Пиццы</li>
-            <li class="search__tag-item">Супы</li>
-            <li class="search__tag-item">Салаты</li>
-            <li class="search__tag-item">Комбо</li>
-            <li class="search__tag-item">Напитки</li>
-            <li class="search__tag-item">Десерты</li>
+        <section class="section menu">
+            <h2 class="menu__title">Меню</h2>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image31.png" alt="Иконка для пиццы с креветками и трюфелями"
+                        width="65" height="65">
+                    <h3 class="menu__title">Пицца с сыром </h3>
+                    <p class="menu__description">Домашняя пицца фетучини, сливочный соус, трюфельное масло, черный
+                        перец, пармезан 350г</p>
+                </li>
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image32.png" alt="Иконка для пиццы 4в1" width="65" height="65">
+                    <h3 class="menu__title">Пицца 4в1</h3>
+                    <p class="menu__description">Вкусная и изысканная пицца 4в1, одна из самых популярных и желанных,
+                        охотничья колбаса, пармезан 350г, нежный соус барбекю, помидоры, пеперони, зеленый перец</p>
+                </li>
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image33.png" alt="Иконка для пиццы Инь-Янь" width="65"
+                        height="65">
+                    <h3 class="menu__title">Пицца Инь-Ян</h3>
+                    <p class="menu__description">Сыр моцарелла, копченная грудка, фирменный соус, ананасы, соус терияки
+                    </p>
+                </li>
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image34.png" alt="Иконка для пиццы с ветчиной и грибами"
+                        width="65" height="65">
+                    <h3 class="menu__title">Пицца с ветчиной и грибами</h3>
+                    <p class="menu__description">Ветчина, моцарелла, кетчуп, сочные шампиньоны, ананасы, бекон</p>
+                </li>
+            </ul>
+        </section>
 
-        </ul>
-    </section>
-</main>
-<!--/ Основной контент -->
-<!-- Подвал -->
-<footer class="footer container">
-    <a class="footer__logo logo">Pizza</a>
-    <p class="footer__copy">&copy; Pizza 2024</p>
-</footer container>
-<!--/ Подвал -->
-<!-- Формы -->
-<div class="dialog dialog--layout">
-    <!-- Форма "Войдите в профиль" -->
-    <section class="popup"> 
-        <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24" height="24"></button>
-        <h2 class="popup__title">Войдите в профиль</h2>
-        <p class="popup__desc">Выбирать или заказывать пиццу могут только зарегистрированные пользователи.</p>
-        <div class="popup__buttons">
-            <button class="button button--login" type="button">Войти</button>
-            <button class="button" type="button">Регистрация</button>
-        </div>
-    </section>
-    <!--/ Форма "Войдите в профиль" -->
-    <!-- Форма "Регистрация" -->
-    <section class="popup">
-        <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24" height="24"></button>
-        <h2 class="popup__title">Регистрация</h2>
-        <form class="popup__form form" action="/" method="post">
-            <input class="form__field" type="text" name="name" placeholder="Имя" required>
-            <input class="form__field" type="email" name="email" placeholder="Логин" required>
-            <fieldset class="form__fieldset">
-                <div class="form__field-block">
-                    <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                    <span>Минимум 8 символов</span>
-                </div>
-                <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль" required>
-            </fieldset>
-            <fieldset class="form__buttons">
-                <button class="button" type="submit">Зарегистрироваться</button>
-                <button class="button" type="button">Отмена</button>
-            </fieldset>
-            <button class="button button--link" type="button">У меня уже есть аккаунт</button>
-        </form>
-    </section>
-    <!--/ Форма "Регистрация" -->
-    <!-- Форма "Войти" -->
-    <section class="popup">
-        <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24" height="24"></button>
-        <h2 class="popup__title">Войти</h2>
-        <form class="popup__form form" action="/" method="post">
-            <input class="form__field" type="email" name="email" placeholder="Логин" required>
-            <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-            <fieldset class="form__buttons">
-                <button class="button button--login" type="submit">Войти</button>
-                <button class="button" type="button">Отмена</button>
-            </fieldset>
-            <button class="button button--link" type="button">У меня еще нет аккаунта</button>
-        </form>
-    </section>
-    <!--/ Форма "Войти" -->
-</div>
-<!--/ Формы -->
+        <section class="section search">
+            <h2 class="section__title section__title--center">Поиск вкусной пиццы</h2>
+            <p class="section__description section__description--center">Введите примерное название пиццы , а мы по
+                тегам
+                найдем его</p>
+            <form class="search__form form" action="/" method="get">
+                <input class="search__form-name form__field" type="search" name="text" placeholder="Название пиццы....">
+            </form>
+            <ul class="search__tag-list">
+                <li class="search__tag-item">Пиццы</li>
+                <li class="search__tag-item">Супы</li>
+                <li class="search__tag-item">Салаты</li>
+                <li class="search__tag-item">Комбо</li>
+                <li class="search__tag-item">Напитки</li>
+                <li class="search__tag-item">Десерты</li>
+
+            </ul>
+        </section>
+    </main>
+    <!--/ Основной контент -->
+    <!-- Подвал -->
+    <footer class="footer container">
+        <a class="footer__logo logo">Pizza</a>
+        <p class="footer__copy">&copy; Pizza 2024</p>
+    </footer container>
+    <!--/ Подвал -->
+    <!-- Формы -->
+    <div class="dialog dialog--layout">
+        <!-- Форма "Войдите в профиль" -->
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Войдите в профиль</h2>
+            <p class="popup__desc">Выбирать или заказывать пиццу могут только зарегистрированные пользователи.</p>
+            <div class="popup__buttons">
+                <button class="button button--login" type="button">Войти</button>
+                <button class="button" type="button">Регистрация</button>
+            </div>
+        </section>
+        <!--/ Форма "Войдите в профиль" -->
+        <!-- Форма "Регистрация" -->
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Регистрация</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="text" name="name" placeholder="Имя" required>
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <fieldset class="form__fieldset">
+                    <div class="form__field-block">
+                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                        <span>Минимум 8 символов</span>
+                    </div>
+                    <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
+                        required>
+                </fieldset>
+                <fieldset class="form__buttons">
+                    <button class="button" type="submit">Зарегистрироваться</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня уже есть аккаунт</button>
+            </form>
+        </section>
+        <!--/ Форма "Регистрация" -->
+        <!-- Форма "Войти" -->
+        <section class="popup">
+            <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24"
+                    height="24"></button>
+            <h2 class="popup__title">Войти</h2>
+            <form class="popup__form form" action="/" method="post">
+                <input class="form__field" type="email" name="email" placeholder="Логин" required>
+                <input class="form__field" type="password" name="password" placeholder="Пароль" required>
+                <fieldset class="form__buttons">
+                    <button class="button button--login" type="submit">Войти</button>
+                    <button class="button" type="button">Отмена</button>
+                </fieldset>
+                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
+            </form>
+        </section>
+        <!--/ Форма "Войти" -->
+    </div>
+    <!--/ Формы -->
 </body>
 
 </html>
