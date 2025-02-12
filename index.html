@@ -15,7 +15,7 @@
             <a class="header__logo logo" href="#">
                 <img src="images/image5.png" alt="Логотип" width="60" height="60">Пицца</a>
 
-            <div>
+            <div class="header__block">
                 <button type="button" class="header__button button">Заказать звонок</button>
                 <span class="header__text">8-999-777-77-77</span>
             </div>
@@ -38,11 +38,11 @@
 
                 </ul>
             </nav>
-        <div>
-                        <button type="button" class="header__button button button--login">
-                <img src="images/image55.png" alt="Войти" width="16" height="16">Войти</button>
-            <button type="button" class="header__button button button--basket">Корзина</button>
-        </div>
+            <div class="header__block">
+                <button type="button" class="button button--login">
+                    <img src="images/image55.png" alt="Войти" width="16" height="16">Войти</button>
+                <button type="button" class="button button--basket">Корзина</button>
+            </div>
 
 
         </div>
@@ -63,7 +63,6 @@
                 height="600">
             <div class="promo__buttons">
                 <button class="promo__button button" type="button">Заказать сочную пиццу</button>
-                <button class="promo__button button button--login" type="button">Войти</button>
                 <!-- <img src="images/image10.png" alt="Изображение пиццы" width="350" height="350">-->
             </div>
         </section>
@@ -74,27 +73,27 @@
                 находить любые категории, на Ваш выбор.</p>
             <ul class="card__list">
                 <li class="card__item">
-                    <img class="card__icon" src="images/image30.png" alt="Иконка для классических пицц" width="24"
-                        height="24">
+                    <img class="card__icon" src="images/image30.png" alt="Иконка для классических пицц" width="71"
+                        height="71">
                     <h3 class="card__title">Классические пиццы</h3>
                     <p class="card__description">Время приготовления таких пицц не более 20 минут.</p>
                 </li>
                 <li class="card__item">
-                    <img class="card__icon" src="images/image15.png" alt="Иконка для детской пиццы" width="24"
-                        height="24">
+                    <img class="card__icon" src="images/image15.png" alt="Иконка для детской пиццы" width="71"
+                        height="71">
                     <h3 class="card__title">Детская пицца</h3>
                     <p class="card__description">Самые полезные и вкусные пиццы, которые можно детям любого возраста</p>
                 </li>
                 <li class="card__item">
-                    <img class="card__icon" src="images/image16.png" alt="Иконка для пиццы от шеф-поваров" width="35"
-                        height="35">
+                    <img class="card__icon" src="images/image16.png" alt="Иконка для пиццы от шеф-поваров" width="71"
+                        height="71">
                     <h3 class="card__title">От шеф-поваров</h3>
                     <p class="card__description">Требуют умения, времени и терпения, зато это особый рецепт пиццы от
                         шеф-поваров , как в ресторане</p>
                 </li>
                 <li class="card__item">
-                    <img class="card__icon" src="images/image17.png" alt="Иконка для пиццы на праздник" width="24"
-                        height="23">
+                    <img class="card__icon" src="images/image17.png" alt="Иконка для пиццы на праздник" width="71"
+                        height="71">
                     <h3 class="card__title">На праздник</h3>
                     <p class="card__description">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
                 </li>
@@ -104,6 +103,32 @@
         <section class="section menu">
             <h2 class="menu__title">Меню</h2>
             <ul class="menu__list">
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image31.png" alt="Иконка для пиццы с креветками и трюфелями"
+                        width="65" height="65">
+                    <h3 class="menu__title">Пицца с сыром </h3>
+                    <p class="menu__description">Домашняя пицца фетучини, сливочный соус, трюфельное масло, черный
+                        перец, пармезан 350г</p>
+                </li>
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image32.png" alt="Иконка для пиццы 4в1" width="65" height="65">
+                    <h3 class="menu__title">Пицца 4в1</h3>
+                    <p class="menu__description">Вкусная и изысканная пицца 4в1, одна из самых популярных и желанных,
+                        охотничья колбаса, пармезан 350г, нежный соус барбекю, помидоры, пеперони, зеленый перец</p>
+                </li>
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image33.png" alt="Иконка для пиццы Инь-Янь" width="65"
+                        height="65">
+                    <h3 class="menu__title">Пицца Инь-Ян</h3>
+                    <p class="menu__description">Сыр моцарелла, копченная грудка, фирменный соус, ананасы, соус терияки
+                    </p>
+                </li>
+                <li class="menu__item">
+                    <img class="menu__icon" src="images/image34.png" alt="Иконка для пиццы с ветчиной и грибами"
+                        width="65" height="65">
+                    <h3 class="menu__title">Пицца с ветчиной и грибами</h3>
+                    <p class="menu__description">Ветчина, моцарелла, кетчуп, сочные шампиньоны, ананасы, бекон</p>
+                </li>
                 <li class="menu__item">
                     <img class="menu__icon" src="images/image31.png" alt="Иконка для пиццы с креветками и трюфелями"
                         width="65" height="65">
@@ -215,6 +240,8 @@
         <!--/ Форма "Войти" -->
     </div>
     <!--/ Формы -->
+
+
 </body>
 
 </html>

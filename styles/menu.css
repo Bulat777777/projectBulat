@@ -1,0 +1,10 @@
+.menu__list{
+    display: grid;
+    grid-template: repeat(4, minmax(256px, 300px)) /  repeat(4, minmax(256px, 300px));
+    gap: 49px 29px ;
+}
+.menu__item{
+    display: flex;
+    flex-direction: column;
+   
+}

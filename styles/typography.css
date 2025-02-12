@@ -30,12 +30,16 @@
 }
 
 .button--login {
-    color: #696F7A;
-    
+    color: #000000;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
     background-color: transparent;
 } 
 .button--basket{
     color: #000000;
+    padding: 7px 25px;
 }
 
 .button--link {
