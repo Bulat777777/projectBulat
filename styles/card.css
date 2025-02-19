@@ -8,6 +8,7 @@
 }
 .card__item{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     flex-basis: 250px;
     padding: 17px 14px;

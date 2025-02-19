@@ -1,10 +1,38 @@
 .menu__list{
     display: grid;
-    grid-template: repeat(4, minmax(256px, 300px)) /  repeat(4, minmax(256px, 300px));
+    grid-template: repeat(2, minmax(256px, 500px)) /  repeat(4, 256px);
     gap: 49px 29px ;
 }
 .menu__item{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     flex-direction: column;
    
+}
+.menu__price{
+    font-weight: 700;
+    font-size: 22px;
+    
+}
+.menu__description{
+    min-height: 80px;
+}
+.menu__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 30px;
+}
+.menu__button{
+    padding: 4px 24px;
+    font-size: 14px;
+}
+.menu__title{
+    font-weight: 800;
+    font-size: 24px;
+    color: #797979;
+    line-height: 28px;
+
+
 }
