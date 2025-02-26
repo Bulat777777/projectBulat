@@ -1,5 +1,6 @@
 .search {
     margin-top: 145px;
+    border-color: #E3ECF5;
 }
 .search__form {
     display: flex;
