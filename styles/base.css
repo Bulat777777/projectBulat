@@ -16,7 +16,9 @@ body {
 
     overflow-x: hidden;
 }
-
+ul{
+    padding: 0;
+}
 img {
     display: block;
     max-width: 100%;
@@ -25,7 +27,6 @@ img {
 
 .visually-hidden {
     position: absolute;
-
     width: 1px;
     height: 1px;
     margin: -1px;
