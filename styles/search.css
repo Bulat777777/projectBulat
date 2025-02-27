@@ -1,6 +1,8 @@
 .search {
     margin-top: 145px;
     border-color: #E3ECF5;
+    background-color:  #E3ECF5;
+    ;
 }
 .search__form {
     display: flex;
@@ -43,4 +45,5 @@
 
 .search__maps{
     margin-top: 30px;
+    padding-bottom: 74px;
 }
