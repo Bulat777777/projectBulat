@@ -1,6 +1,6 @@
 .menu__list{
     display: grid;
-    align-items: center;
+    justify-content: space-evenly;
     grid-template: repeat(2, minmax(256px, 500px)) /  repeat(4, 256px);
     gap: 49px 29px ;
 }

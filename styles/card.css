@@ -1,7 +1,6 @@
 .card__list {
     display: flex;
-    justify-content: start;
-    align-items: center;
+    justify-content: space-evenly;
     gap: 30px;
     list-style-type: none;
     padding: 0;
