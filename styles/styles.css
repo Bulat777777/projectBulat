@@ -4,6 +4,8 @@
 @import "base.css";
 /* Подключение универсальных стилей */
 @import "typography.css";
+@import "main.css";
+
 /* Подключение стилей относящихся к header */
 @import "header.css";
 @import "card.css";

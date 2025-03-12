@@ -9,8 +9,13 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-   
+    transition: 0.3s;
 }
+
+.menu__item:hover{
+    transform: scale(1.1);
+}
+
 .menu__price{
     font-weight: 700;
     font-size: 22px;

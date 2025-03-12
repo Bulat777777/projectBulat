@@ -25,9 +25,6 @@
     align-items: center;
 
 }
-.header__logo{
-    text-decoration: none;
-}
 
 .header__wrapper {
     display: flex;
@@ -40,6 +37,11 @@
     font-weight: 700;
     font-size: 26px;
     color: #F7D22D;
+    transition: 0.3s;
+}
+.header__text:hover {
+    transform: scale(1.1);
+
 }
 
 .header__list {
@@ -62,13 +64,26 @@
     color: #0E0C0D;
 }
 
+.header__item-link:hover{
+    color: #696F7A;
+}
+
 .header__block {
     display: flex;
     align-items: center;
     gap: 15px;
+    transition: 0.3s;
 }
+
+.header__block:hover{
+    transform: scale(1.1)
+}
+
 .header__button{
 
     color: #696F7A;
     background-color: #f3f3f7;
+}
+.header__button:hover{
+    color:#F7D22D 
 }
