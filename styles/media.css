@@ -1,31 +1,37 @@
-
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) {
 
     .container {
-     max-width: 99%;
+        max-width: 89%;
     }
 
-    .header{
-        max-width: 1023px;
-    }
-    
-    .header__wrapper{
+
+    .header__wrapper {
         flex-wrap: wrap;
     }
-.menu__list{
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    
-}
-.card__list {
-    flex-wrap: wrap;
-    justify-content: center;
-    
-}
-.card__item{
-    flex-basis: 350px;
+
+    .menu__list {
+        display: grid;
+        grid-template-columns: repeat(2, 400px);
+
+    }
+
+    .card__list {
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .card__item {
+        flex-basis: 350px;
 
 
-}
+    
+    }
+    .header__block{
+        margin-top: 25px;
+    }
+    .header__nav{
+        width: 99%;
+    }
 
 }
