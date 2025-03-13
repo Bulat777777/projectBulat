@@ -43,6 +43,11 @@
     font-weight: 400;
 }
 
+.search__tag-item:hover{
+    color: black;
+
+}
+ 
 .search__maps{
     margin-top: 30px;
     padding-bottom: 74px;

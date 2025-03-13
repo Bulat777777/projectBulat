@@ -65,18 +65,17 @@
 }
 
 .header__item-link:hover{
-    color: #696F7A;
+    color: #696F7A; 
 }
 
 .header__block {
     display: flex;
     align-items: center;
     gap: 15px;
-    transition: 0.3s;
 }
 
-.header__block:hover{
-    transform: scale(1.1)
+.button:hover{
+    color:#696F7A; 
 }
 
 .header__button{
