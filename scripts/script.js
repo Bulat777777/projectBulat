@@ -3,10 +3,16 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log('Скрипт отработал корректно');
 
-    const menuIcon = document.querySelector(".menu__icon");
+    const menuIcons = document.querySelectorAll(".menu__icon");
 
-    menuIcon.addEventListener('mouseenter', () => {
-        console.log('Мышка наведена на изображение, показываем текст');
+    menuIcons.forEach((item, index) => {
+        const menuText = document.querySelectorAll('.menu__description');
+        item.addEventListener('mouseenter', () => {
+            item.style.opacity = 0.5;
+            // И удаляем атрибут hidden и текст становится видимым
+              menuText[index].removeAttribute('hidden');
+            });
+        
  });
 
 
