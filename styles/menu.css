@@ -22,12 +22,17 @@
     font-size: 22px;
     
 }
-.menu__description{
-    position: absolute;
-    min-height: 80px;
-    top: 50%; /* верхняя часть смещена на 50% высоты родителя*/
-    left: 50%; /*левая граница смещена на 50% ширины родителя*/
+.menu__popup{
+    background-color: #fff;
     transform: translate(-50%, 50%);/* смещаем элемент относительно его текущего положения*/
+    box-shadow: 0px 4px 24px 0px #d9bd1cd6;
+    
+    position: absolute;
+    z-index: 2;
+    width: 230px;
+    min-height: 230px;
+    top: -25%; /* верхняя часть смещена на 50% высоты родителя*/
+    left: 50%; /*левая граница смещена на 50% ширины родителя*/
 }
 .menu__wrap{
     display: flex;
