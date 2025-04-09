@@ -9,11 +9,15 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    transition: 0.3s;
+    
     position: relative;
 }
 
-.menu__item:hover{
+.menu__icon{
+    transition: 0.3s;
+}
+
+.menu__icon:hover{
     transform: scale(1.1);
 }
 
@@ -30,9 +34,10 @@
     position: absolute;
     z-index: 2;
     width: 230px;
-    min-height: 230px;
+    height: 270px;
     top: -25%; /* верхняя часть смещена на 50% высоты родителя*/
     left: 50%; /*левая граница смещена на 50% ширины родителя*/
+    pointer-events: none;
 }
 .menu__wrap{
     display: flex;
