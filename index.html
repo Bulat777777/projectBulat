@@ -39,7 +39,7 @@
                 </ul>
             </nav>
             <div class="header__block">
-                <button type="button" class="button button--login">
+                <button type="button" class="button button--login button__log">
                     <img src="images/image55.png" alt="Войти" width="16" height="16">Войти</button>
                 <button type="button" class="button button--basket">Корзина</button>
             </div>
@@ -73,21 +73,21 @@
                 <li class="card__item">
                     <img class="card__icon" src="images/image30.png" alt="Иконка для классических пицц" width="71"
                         height="71">
-                    <h3 class="card__title">Классические пиццы</h3>
+                    <h3 class="card__title">Заголовок 1</h3>
                     <p class="card__description">Время приготовления таких пицц не более 20 минут.</p>
                     <span class="menu__price">От 120Р</span>
                 </li>
                 <li class="card__item">
                     <img class="card__icon" src="images/image15.png" alt="Иконка для детской пиццы" width="71"
                         height="71">
-                    <h3 class="card__title">Детская пицца</h3>
+                    <h3 class="card__title">Заголовок 2</h3>
                     <p class="card__description">Самые полезные и вкусные пиццы, которые можно детям любого возраста</p>
                     <span class="menu__price">От 120Р</span>
                 </li>
                 <li class="card__item">
                     <img class="card__icon" src="images/image16.png" alt="Иконка для пиццы от шеф-поваров" width="71"
                         height="71">
-                    <h3 class="card__title">От шеф-поваров</h3>
+                    <h3 class="card__title">Заголовок 3</h3>
                     <p class="card__description">Требуют умения, времени и терпения, зато это особый рецепт пиццы от
                         шеф-поваров , как в ресторане</p>
                     <span class="menu__price">От 120Р</span>
@@ -95,7 +95,7 @@
                 <li class="card__item">
                     <img class="card__icon" src="images/image17.png" alt="Иконка для пиццы на праздник" width="71"
                         height="71">
-                    <h3 class="card__title">На праздник</h3>
+                    <h3 class="card__title">Заголовок 4</h3>
                     <p class="card__description">Чем удивить гостей, чтобы все были сыты за праздничным столом</p>
                     <span class="menu__price">От 120Р</span>
                 </li>
@@ -305,48 +305,14 @@
     </footer container>
     <!--/ Подвал -->
     <!-- Формы -->
-    <div class="dialog dialog--layout" style="display: none;">
-        <!-- Форма "Войдите в профиль" -->
-        <section class="popup">
-            <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <h2 class="popup__title">Войдите в профиль</h2>
-            <p class="popup__desc">Выбирать или заказывать пиццу могут только зарегистрированные пользователи.</p>
-            <div class="popup__buttons">
-                <button class="button button--login" type="button">Войти</button>
-                <button class="button" type="button">Регистрация</button>
-            </div>
-        </section>
-        <!--/ Форма "Войдите в профиль" -->
-        <!-- Форма "Регистрация" -->
-        <section class="popup">
-            <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <h2 class="popup__title">Регистрация</h2>
-            <form class="popup__form form" action="/" method="post">
-                <input class="form__field" type="text" name="name" placeholder="Имя" required>
-                <input class="form__field" type="email" name="email" placeholder="Логин" required>
-                <fieldset class="form__fieldset">
-                    <div class="form__field-block">
-                        <input class="form__field" type="password" name="password" placeholder="Пароль" required>
-                        <span>Минимум 8 символов</span>
-                    </div>
-                    <input class="form__field" type="password" name="repeat-password" placeholder="Повторите пароль"
-                        required>
-                </fieldset>
-                <fieldset class="form__buttons">
-                    <button class="button" type="submit">Зарегистрироваться</button>
-                    <button class="button" type="button">Отмена</button>
-                </fieldset>
-                <button class="button button--link" type="button">У меня уже есть аккаунт</button>
-            </form>
-        </section>
-        <!--/ Форма "Регистрация" -->
+    <div class="dialog dialog--layout" hidden>
+     
         <!-- Форма "Войти" -->
         <section class="popup">
             <button class="popup__close" type="button"><img src="images/image25.png" alt="Закрыть окно" width="24"
-                    height="24"></button>
-            <h2 class="popup__title">Войти</h2>
+                height="24"></button>
+                <div class="popup__wrap">
+                             <h2 class="popup__title">Войти</h2>
             <form class="popup__form form" action="/" method="post">
                 <input class="form__field" type="email" name="email" placeholder="Логин" required>
                 <input class="form__field" type="password" name="password" placeholder="Пароль" required>
@@ -354,8 +320,9 @@
                     <button class="button button--login" type="submit">Войти</button>
                     <button class="button" type="button">Отмена</button>
                 </fieldset>
-                <button class="button button--link" type="button">У меня еще нет аккаунта</button>
-            </form>
+            </form>   
+                </div>
+
         </section>
         <!--/ Форма "Войти" -->
     </div>
