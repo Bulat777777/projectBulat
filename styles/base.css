@@ -13,8 +13,12 @@ body {
     color:#0E0C0D;
 
     background-color: #fefefb;
-
     overflow-x: hidden;
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
 }
 ul{
     padding: 0;

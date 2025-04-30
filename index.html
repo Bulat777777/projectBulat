@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Пицца</title>
     <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 
@@ -62,10 +63,28 @@
                     <h2 class="promo__title section__title">Вкусная Пицца</h2>
                     <p class="promo__description">Готовим с любовью по особому рецепту. Закажи вкусную пиццу у нас.</p>
                 </div>
-                <img class="promo__image" src="images/image35.png" alt="Изображение рекламного фото сайта 1" width="600"
-                    height="300">
-                <img class="promo__image" src="images/image36.png" alt="Изображение рекламного фото сайта 2" width="800"
-                    height="600">
+
+
+<!-- Swiper -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> <img class="promo__image" src="images/image35.png" alt="Изображение рекламного фото сайта 1" width="600"
+        height="300"></div>
+      <div class="swiper-slide"> <img class="promo__image" src="images/image36.png" alt="Изображение рекламного фото сайта 1" width="600"
+        height="300"></div>
+
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- Swiper JS -->
+
+
+
                 <div class="promo__buttons">
                     <button class="promo__button button" type="button">Заказать сочную пиццу</button>
                     <!-- <img src="images/image10.png" alt="Изображение пиццы" width="350" height="350">-->
@@ -339,6 +358,7 @@
         <!--/ Формы -->
     </div>
         <script src="scripts/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 </body>

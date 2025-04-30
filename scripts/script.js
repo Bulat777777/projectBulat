@@ -224,7 +224,107 @@ const cardsCon = document.querySelector(".card");
 
             // Удаляем элемент из DOM
             preloader.remove();
-        }, 3000); // Задержка 3 секунды
+        }, 1000); // Задержка 3 секунды
     }
 });
+
+//3.7 swiper
+
+/*function myPlugin({ swiper, extendParams, on }) {
+  extendParams({
+    debugger: false,
+  });
+
+  on('init', () => {
+    if (!swiper.params.debugger) return;
+    console.log('init');
+  });
+  on('click', (swiper, e) => {
+    if (!swiper.params.debugger) return;
+    console.log('click');
+  });
+  on('tap', (swiper, e) => {
+    if (!swiper.params.debugger) return;
+    console.log('tap');
+  });
+  on('doubleTap', (swiper, e) => {
+    if (!swiper.params.debugger) return;
+    console.log('doubleTap');
+  });
+  on('sliderMove', (swiper, e) => {
+    if (!swiper.params.debugger) return;
+    console.log('sliderMove');
+  });
+  on('slideChange', () => {
+    if (!swiper.params.debugger) return;
+    console.log(
+      'slideChange',
+      swiper.previousIndex,
+      '->',
+      swiper.activeIndex
+    );
+  });
+  on('slideChangeTransitionStart', () => {
+    if (!swiper.params.debugger) return;
+    console.log('slideChangeTransitionStart');
+  });
+  on('slideChangeTransitionEnd', () => {
+    if (!swiper.params.debugger) return;
+    console.log('slideChangeTransitionEnd');
+  });
+  on('transitionStart', () => {
+    if (!swiper.params.debugger) return;
+    console.log('transitionStart');
+  });
+  on('transitionEnd', () => {
+    if (!swiper.params.debugger) return;
+    console.log('transitionEnd');
+  });
+  on('fromEdge', () => {
+    if (!swiper.params.debugger) return;
+    console.log('fromEdge');
+  });
+  on('reachBeginning', () => {
+    if (!swiper.params.debugger) return;
+    console.log('reachBeginning');
+  });
+  on('reachEnd', () => {
+    if (!swiper.params.debugger) return;
+    console.log('reachEnd');
+  });
+}*/
+// Init Swiper
+var swiper = new swiper('.mySwiper', {
+  // Install Plugin To Swiper
+  pagination: {
+    el: '.swiper-pagination',
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  // Enable debugger
+
+});
+// объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.swiper');
+//проверяем существует ли элемент
+    if (sliders) {
+        const swiper1 = new swiper(sliders, {
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination',
+                type: "fraction",
+            },
+
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    }
+
+
 
