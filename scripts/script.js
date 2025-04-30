@@ -154,7 +154,77 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
   }
+//3.6
+const cardsCon = document.querySelector(".card");
+    if (cardsContainer) {
+        const cardList = cardsCon.querySelector(".card__list");
+ 
+        // Пример URL для получения данных с сервера
+        const apiUrl = "data.json";
 
+         // Функция для создания карточки
+        const createCard = (
+            image,
+            iconAlt,
+            iconWidth,
+            iconHeight,
+            title,
+            description,
+            price
+        ) => {
+            // Шаблонные строки и подстановки
+            const card = `
+            <li class="card__item">
+                    <img class="card__icon" src="${image}" alt="${iconAlt}"width="${iconWidth}"
+                        height="${iconHeight}">
+                    <h3 class="card__title">${title}</h3>
+                    <p class="card__description">${description}</p>
+                    <span class="menu__price">${price}</span>
+                </li>
+            `;
+            return card;
+        };
+   // Загрузка данных с сервера
+   fetch(apiUrl)
+   .then((response) => response.json())
+   .then((data) => {
+       console.log(data); // Данные
+       console.log(typeof data); // Тип полученных данных
 
+       data.forEach((item) => {
+           const cardElement = createCard(
+               item.image,
+               item.iconAlt,
+               item.iconWidth,
+               item.iconHeight,
+               item.title,
+               item.description,
+               item.price
+           );
+           cardList.insertAdjacentHTML("beforeend", cardElement);
+       });
+   })
+   .catch((error) => {
+       console.error("Ошибка при загрузке данных:", error);
+   });
+
+}
+
+    // Preloader страницы
+    const preloader = document.querySelector('.preloader');
+    const content = document.querySelector('.content');
+    if (preloader && content) {
+        setTimeout(() => {
+            // Скрываем прелоадер
+            preloader.style.opacity = '0';
+            preloader.style.visibility = 'hidden';
+
+            // Показываем контент
+            content.style.display = 'block';
+
+            // Удаляем элемент из DOM
+            preloader.remove();
+        }, 3000); // Задержка 3 секунды
+    }
 });
 
