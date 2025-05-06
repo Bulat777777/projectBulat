@@ -154,26 +154,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
   }
-//3.6
-const cardsCon = document.querySelector(".card");
-    if (cardsContainer) {
-        const cardList = cardsCon.querySelector(".card__list");
- 
-        // Пример URL для получения данных с сервера
-        const apiUrl = "data.json";
+  //3.6
+  const cardsCon = document.querySelector(".card");
+  if (cardsContainer) {
+    const cardList = cardsCon.querySelector(".card__list");
 
-         // Функция для создания карточки
-        const createCard = (
-            image,
-            iconAlt,
-            iconWidth,
-            iconHeight,
-            title,
-            description,
-            price
-        ) => {
-            // Шаблонные строки и подстановки
-            const card = `
+    // Пример URL для получения данных с сервера
+    const apiUrl = "data.json";
+
+    // Функция для создания карточки
+    const createCard = (
+      image,
+      iconAlt,
+      iconWidth,
+      iconHeight,
+      title,
+      description,
+      price
+    ) => {
+      // Шаблонные строки и подстановки
+      const card = `
             <li class="card__item">
                     <img class="card__icon" src="${image}" alt="${iconAlt}"width="${iconWidth}"
                         height="${iconHeight}">
@@ -182,50 +182,83 @@ const cardsCon = document.querySelector(".card");
                     <span class="menu__price">${price}</span>
                 </li>
             `;
-            return card;
-        };
-   // Загрузка данных с сервера
-   fetch(apiUrl)
-   .then((response) => response.json())
-   .then((data) => {
-       console.log(data); // Данные
-       console.log(typeof data); // Тип полученных данных
+      return card;
+    };
+    // Загрузка данных с сервера
+    fetch(apiUrl)
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data); // Данные
+        console.log(typeof data); // Тип полученных данных
 
-       data.forEach((item) => {
-           const cardElement = createCard(
-               item.image,
-               item.iconAlt,
-               item.iconWidth,
-               item.iconHeight,
-               item.title,
-               item.description,
-               item.price
-           );
-           cardList.insertAdjacentHTML("beforeend", cardElement);
-       });
-   })
-   .catch((error) => {
-       console.error("Ошибка при загрузке данных:", error);
-   });
+        data.forEach((item) => {
+          const cardElement = createCard(
+            item.image,
+            item.iconAlt,
+            item.iconWidth,
+            item.iconHeight,
+            item.title,
+            item.description,
+            item.price
+          );
+          cardList.insertAdjacentHTML("beforeend", cardElement);
+        });
+      })
+      .catch((error) => {
+        console.error("Ошибка при загрузке данных:", error);
+      });
 
-}
+  }
 
-    // Preloader страницы
-    const preloader = document.querySelector('.preloader');
-    const content = document.querySelector('.content');
-    if (preloader && content) {
-        setTimeout(() => {
-            // Скрываем прелоадер
-            preloader.style.opacity = '0';
-            preloader.style.visibility = 'hidden';
+  // Preloader страницы
+  const preloader = document.querySelector('.preloader');
+  const content = document.querySelector('.content');
+  if (preloader && content) {
+    setTimeout(() => {
+      // Скрываем прелоадер
+      preloader.style.opacity = '0';
+      preloader.style.visibility = 'hidden';
 
-            // Показываем контент
-            content.style.display = 'block';
+      // Показываем контент
+      content.style.display = 'block';
 
-            // Удаляем элемент из DOM
-            preloader.remove();
-        }, 1000); // Задержка 3 секунды
+      // Удаляем элемент из DOM
+      preloader.remove();
+    }, 1000); // Задержка 3 секунды
+  }
+
+  // // Init Swiper
+  // var swiper = new swiper('.mySwiper', {
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     type: "fraction",
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+
+  // });
+ // объявляем переменную sliders,куда помещаем элемент с классом swiper
+const sliders = document.querySelector('.mySwiper');
+//проверяем существует ли элемент
+    if (sliders) {  
+        const swiper = new Swiper(sliders, {
+            // Пагинация
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Навигационные стрелки
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
     }
+
+
 });
 
 //3.7 swiper
@@ -293,38 +326,7 @@ const cardsCon = document.querySelector(".card");
     console.log('reachEnd');
   });
 }*/
-// Init Swiper
-var swiper = new swiper('.mySwiper', {
-  // Install Plugin To Swiper
-  pagination: {
-    el: '.swiper-pagination',
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  // Enable debugger
 
-});
-// объявляем переменную sliders,куда помещаем элемент с классом swiper
-const sliders = document.querySelector('.swiper');
-//проверяем существует ли элемент
-    if (sliders) {
-        const swiper1 = new swiper(sliders, {
-            // Пагинация
-            pagination: {
-                el: '.swiper-pagination',
-                type: "fraction",
-            },
-
-            // Навигационные стрелки
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-        });
-    }
 
 
 
