@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
     headerButtonModal.addEventListener("click", () => {
       modalApplication.removeAttribute("hidden");
     });
-  }
+ 
   window.addEventListener("click", (event) => {
     // проверяем, был ли клик на фоне модального окна
     if (event.target === modalApplication) {
@@ -78,9 +78,36 @@ document.addEventListener("DOMContentLoaded", () => {
   closeModalButton.addEventListener("click", () => {
     // Добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
     modalApplication.setAttribute("hidden", true);
+    
   });
+  const formApplication = document.querySelector("#form"); 
+  // Проверяем, существует ли элемент formApplication
+  if (formApplication) {  
+      // Добавляем обработчик события для отправки формы
+     formApplication.addEventListener("submit", (event) => {
+       event.preventDefault(); // Предотвращаем отправку формы
+      // Объявляем переменные "username", "tel","email",   и помещаем в нее элементы с id из формы
+       const login = formApplication.querySelector("#login").value;
 
-
+       // Объявляем переменную modalMessage и помещаем в нее элемент для отображения сообщений о статусе заявки
+  const modalMessage = modalApplication.querySelector("#application-message");
+      
+        // Проверка длины имени пользователя
+        if (login.length < 8) {
+           modalMessage.textContent = "Логин должен содержать не менее 8 символов";
+           modalMessage.style.color = "black"; // Устанавливаем цвет сообщения об ошибке
+           return;
+        }
+      
+        // Здесь можно добавить отправку данных на сервер
+        modalMessage.textContent = "Вход выпонен!";
+        modalMessage.style.color = "green"; // Устанавливаем цвет сообщения для успешной отправки
+      
+        // Записываем данные в localStorage
+        window.localStorage.setItem("login", login);
+  });
+}
+ }
   //3.5
   //Объявляем переменную headerMenu и сохраняем в нее header__menu
   const headerMenu = document.querySelector('.header__nav');
@@ -227,20 +254,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }, 1000); // Задержка 3 секунды
   }
 
-  // // Init Swiper
-  // var swiper = new swiper('.mySwiper', {
-  //   pagination: {
-  //     el: '.swiper-pagination',
-  //     type: "fraction",
-  //   },
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
 
-  // });
  // объявляем переменную sliders,куда помещаем элемент с классом swiper
-const sliders = document.querySelector('.mySwiper');
+const sliders = document.querySelector('.swiper');
 //проверяем существует ли элемент
     if (sliders) {  
         const swiper = new Swiper(sliders, {
@@ -261,71 +277,8 @@ const sliders = document.querySelector('.mySwiper');
 
 });
 
-//3.7 swiper
 
-/*function myPlugin({ swiper, extendParams, on }) {
-  extendParams({
-    debugger: false,
-  });
 
-  on('init', () => {
-    if (!swiper.params.debugger) return;
-    console.log('init');
-  });
-  on('click', (swiper, e) => {
-    if (!swiper.params.debugger) return;
-    console.log('click');
-  });
-  on('tap', (swiper, e) => {
-    if (!swiper.params.debugger) return;
-    console.log('tap');
-  });
-  on('doubleTap', (swiper, e) => {
-    if (!swiper.params.debugger) return;
-    console.log('doubleTap');
-  });
-  on('sliderMove', (swiper, e) => {
-    if (!swiper.params.debugger) return;
-    console.log('sliderMove');
-  });
-  on('slideChange', () => {
-    if (!swiper.params.debugger) return;
-    console.log(
-      'slideChange',
-      swiper.previousIndex,
-      '->',
-      swiper.activeIndex
-    );
-  });
-  on('slideChangeTransitionStart', () => {
-    if (!swiper.params.debugger) return;
-    console.log('slideChangeTransitionStart');
-  });
-  on('slideChangeTransitionEnd', () => {
-    if (!swiper.params.debugger) return;
-    console.log('slideChangeTransitionEnd');
-  });
-  on('transitionStart', () => {
-    if (!swiper.params.debugger) return;
-    console.log('transitionStart');
-  });
-  on('transitionEnd', () => {
-    if (!swiper.params.debugger) return;
-    console.log('transitionEnd');
-  });
-  on('fromEdge', () => {
-    if (!swiper.params.debugger) return;
-    console.log('fromEdge');
-  });
-  on('reachBeginning', () => {
-    if (!swiper.params.debugger) return;
-    console.log('reachBeginning');
-  });
-  on('reachEnd', () => {
-    if (!swiper.params.debugger) return;
-    console.log('reachEnd');
-  });
-}*/
 
 
 
